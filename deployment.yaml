@@ -15,9 +15,9 @@ spec:
     spec:
       containers:
       - name: wil-playground
-        [cite_start]image: wil42/playground:v1 # spp verdion 1 [cite: 471, 476]
+        image: wil42/playground:v1 # spp verdion 1 [cite: 471, 476]
         ports:
-        - [cite_start]containerPort: 8888 # app port [cite: 478]
+        - containerPort: 8888 # app port [cite: 478]
 
 ---
 apiVersion: v1
