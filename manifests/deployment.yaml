@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: wil-playground
-        image: wil42/playground:v2 # spp verdion 1
+        image: wil42/playground:v1 # spp verdion 1
         ports:
         - containerPort: 8888 # app port
 
