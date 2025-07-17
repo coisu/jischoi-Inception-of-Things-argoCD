@@ -12,33 +12,34 @@ spec:
     metadata:
       labels:
         app: wil-playground
+        version: v1
     spec:
       containers:
       - name: wil-playground
-        image: wil42/playground:v1 # spp verdion 1 [cite: 471, 476]
+        image: wil42/playground:v1 # spp verdion 1
         ports:
-        - containerPort: 8888 # app port [cite: 478]
+        - containerPort: 8888 # app port
 
-apiVersion: apps/v1
-kind: Deployment
-metadata:
-  name: wil-playground-empty
-  namespace: dev
-spec:
-  replicas: 0
-  selector:
-    matchLabels:
-      app: wil-playground-empty
-  template:
-    metadata:
-      labels:
-        app: wil-playground-empty
-    spec:
-      containers:
-      - name: dummy
-        image: nginx
-        ports:
-        - containerPort: 80
+# apiVersion: apps/v1
+# kind: Deployment
+# metadata:
+#   name: wil-playground-empty
+#   namespace: dev
+# spec:
+#   replicas: 0
+#   selector:
+#     matchLabels:
+#       app: wil-playground-empty
+#   template:
+#     metadata:
+#       labels:
+#         app: wil-playground-empty
+#     spec:
+#       containers:
+#       - name: dummy
+#         image: nginx
+#         ports:
+#         - containerPort: 80
 ---
 apiVersion: v1
 kind: Service
