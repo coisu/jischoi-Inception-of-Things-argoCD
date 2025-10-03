@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: wil-playground
-        image: wil42/playground:v2 # spp version 1
+        image: wil42/playground:v1 # spp version 1
         ports:
         - containerPort: 8888 # app port
 
@@ -53,6 +53,7 @@ spec:
   - protocol: TCP
     port: 80
     targetPort: 8888
+
 
 
 
